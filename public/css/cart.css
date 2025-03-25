@@ -1,0 +1,116 @@
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.cart-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background-color: #1f2937;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+}
+
+.cart-item h3 {
+    margin: 0 0 0.5rem;
+}
+
+.cart-item p {
+    margin: 0;
+    color: #9ca3af;
+}
+
+.cart-item-quantity {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-quantity button {
+    background-color: #374151;
+    color: white;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item-quantity button:hover {
+    background-color: #4b5563;
+}
+
+.cart-item-quantity span {
+    margin: 0 0.5rem;
+}
+
+.cart-item-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.cart-item-actions button {
+    padding: 0.5rem;
+    background-color: #422323;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item-actions button:hover {
+    background-color: #000000;
+}
+
+#cart-summary {
+    background-color: #1f2937;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+#cart-summary p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+#checkout-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #301f1f;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+#checkout-btn:hover {
+    background-color: #000000;
+}
+
+#checkout-btn a {
+    color: white;
+    text-decoration: none;
+}

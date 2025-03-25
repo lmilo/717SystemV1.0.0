@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body>
+
+    </head>
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <body class="container">
+
+
+
+        <main class="container">
+
+            <section id="productos" class="productos">
+                <h2>Nuestros Productos</h2>
+                <div class="product-grid" id="product-grid">
+                </div>
+            </section>
+            <table>
+                <thead>
+                    <th>Referencia</th>
+                    <th>Productos</th>
+                    <th>Precio</th>
+                    <th>Descripcion</th>
+                    <th>Categoria</th>
+                    <th>Imagenes</th>
+                    <th>acciones</th>
+                </thead>
+                <tbody>
+                    <% listadoProductos.forEach(producto=> { %>
+                        <tr>
+                            <td>
+                                <%= producto.referencia %>
+                            </td>
+                            <td>
+                                <%= producto.nombre %>
+                            </td>
+                            <td>
+                                <%= producto.precio %>
+                            </td>
+                            <td>
+                                <%= producto.descripcion %>
+                            </td>
+                            <td>
+                                <%= producto.tipo %>
+                            </td>
+                            <td>
+                                <%= producto.medidas %>
+                            </td>
+                            <td>
+                                <%= producto.color %>
+                            </td>
+                            <td>
+                                <%= producto.genero %>
+                            </td>
+                            <td>
+                                <%= producto.cantidad %>
+                            </td>
+                            <td>
+                                <%= producto.imagen %>
+                            </td>
+                            <td>
+                                <button data-bs-toggle="modal" data-bs-target="#editModal" onclick=""><i
+                                        class="bi bi-pencil-square"></i></button>
+                                <button class="btn btn-outline-danger" onclick=""><i class="bi bi-trash"></i></button>
+
+                            </td>
+                        </tr>
+
+                        <%})%>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <%- include('../partials/footer'); %>
+        </footer>
+
+    </body>

@@ -1,0 +1,32 @@
+<footer>
+    <div class="footer-grid">
+        <div>
+            <h3>SÍGUENOS</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/717.___" target="_blank"><i data-lucide="instagram"></i></a>
+                <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank"><i data-lucide="facebook"></i></a>
+                <a href="https://x.com/?lang=es" target="_blank"><i data-lucide="twitter"></i></a>
+            </div>
+        </div>
+        <div>
+            <h3>CATEGORÍAS</h3>
+            <ul>
+                <li><a href='{% url "inicio" %}'>INICIO</a></li>
+                <li><a href='{% url "productos" %}'>PRODUCTOS</a></li>
+                <li><a href='{% url "contacto" %}'>CONTACTO</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>NAVEGACIÓN</h3>
+            <ul>
+                <li><a href='{% url "inicio" %}'>INICIO</a></li>
+                <li><a href='{% url "productos" %}'>PRODUCTOS</a></li>
+                <li><a href='{% url "contacto" %}'>CONTACTO</a></li>
+                <li><a href='{% url "legal" %}'>LEGAL</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-logo">
+        <img src="{% static 'img/717logo.png'%}" alt="717 Logo" width="70" height="70">
+    </div>
+</footer>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <%- include('../partials/head'); %>
+        <link rel="stylesheet" href="/public/css/productos.css">
+</head>
+
+<body>
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+        <div class="slider">
+            <div class="slide-container">
+                <img src="/public/img/Misca_Con_Diseño.jpg" alt="photo 1" class="slide active">
+                <img src="/public/img/Misca_Con_Logo.jpg" alt="photo 2" class="slide">
+                <img src="/public/img/Misca_Con_Nombre.jpg" alt="photo 3" class="slide">
+            </div>
+            <div class="slider-nav"></div>
+        </div>
+        <h1 class="main-title">VIVE LA CALLE</h1>
+        <h2 class="sub-title">717</h2>
+        <section class="destacados">
+            <!-- IMAGEN Y CON PRODUCTOS Y QUE ESTAN EN OFERTA -->
+            <h2>OFERTAS</h2>
+            <img src="/public/img/ESPEJO.jpg" alt="">
+            <div class="product-grid" id="product-grid">
+            </div>
+        </section>
+        <section>
+            <h2>DESTACADOS</h2>
+            <div class="product-grid" id="product-grid">
+                <table>
+                    <thead>
+                        <th>Referencia</th>
+                        <th>Productos</th>
+                        <th>Precio</th>
+                        <th>Descripcion</th>
+                        <th>Categoria</th>
+                        <th>Imagenes</th>
+                        <th>acciones</th>
+                    </thead>
+                    <tbody>
+                        <% productos.forEach(producto=> { %>
+                            <tr>
+                                <td>
+                                    <%= producto.referencia %>
+                                </td>
+                                <td>
+                                    <%= producto.nombre %>
+                                </td>
+                                <td>
+                                    <%= producto.precio %>
+                                </td>
+                                <td>
+                                    <%= producto.descripcion %>
+                                </td>
+                                <td>
+                                    <%= producto.tipo %>
+                                </td>
+                                <td>
+                                    <%= producto.medidas %>
+                                </td>
+                                <td>
+                                    <%= producto.color %>
+                                </td>
+                                <td>
+                                    <%= producto.genero %>
+                                </td>
+                                <td>
+                                    <%= producto.cantidad %>
+                                </td>
+                                <td>
+                                    <%= producto.imagen %>
+                                </td>
+                                <td>
+                                    <button data-bs-toggle="modal" data-bs-target="#editModal" onclick=""><i
+                                            class="bi bi-pencil-square"></i></button>
+                                    <button class="btn btn-outline-danger" onclick=""><i
+                                            class="bi bi-trash"></i></button>
+
+                                </td>
+                            </tr>
+
+                            <%})%>
+                    </tbody>
+                </table>
+        </section>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
