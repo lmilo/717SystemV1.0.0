@@ -1,5 +1,9 @@
 # 717SystemV1.0.0
 
+>[!TIP]
+>ES BUENO QUE TRABAJE DESDE CASA PARA QUE NO LOS COJA LA TARDE CON ESE PROYECTO
+>ATT: LA J Y LA P
+
 ## Info General
 
 Sistema para una tienda virtual, con funciones crud para usuarios, productos; ademas tendra integrada pasarela de pago y area de contacto 
